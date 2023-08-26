@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/IMGFoto"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/TVDireccion"
+        android:layout_width="182dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/IMGFoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVPrecio"
+        android:layout_width="180dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/IMGFoto"
+        app:layout_constraintTop_toBottomOf="@+id/TVDireccion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
